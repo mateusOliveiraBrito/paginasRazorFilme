@@ -16,5 +16,6 @@ namespace paginasRazorFilmes.Modelos
 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Preco { get; set; }
+        public string Classificacao { get; set; }
     }
 }

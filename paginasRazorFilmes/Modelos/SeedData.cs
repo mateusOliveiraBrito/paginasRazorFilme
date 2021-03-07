@@ -27,7 +27,8 @@ namespace paginasRazorFilmes.Modelos
                         Titulo = "When Harry Met Sally",
                         DataDeLancamento = DateTime.Parse("1989-2-12"),
                         Genero = "Romantic Comedy",
-                        Preco = 7.99M
+                        Preco = 7.99M,
+                        Classificacao = "R"
                     },
 
                     new Filme
@@ -35,7 +36,8 @@ namespace paginasRazorFilmes.Modelos
                         Titulo = "Ghostbusters ",
                         DataDeLancamento = DateTime.Parse("1984-3-13"),
                         Genero = "Comedy",
-                        Preco = 8.99M
+                        Preco = 8.99M,
+                        Classificacao = "R"
                     },
 
                     new Filme
@@ -43,7 +45,8 @@ namespace paginasRazorFilmes.Modelos
                         Titulo = "Ghostbusters 2",
                         DataDeLancamento = DateTime.Parse("1986-2-23"),
                         Genero = "Comedy",
-                        Preco = 9.99M
+                        Preco = 9.99M,
+                        Classificacao = "R"
                     },
 
                     new Filme
@@ -51,7 +54,8 @@ namespace paginasRazorFilmes.Modelos
                         Titulo = "Rio Bravo",
                         DataDeLancamento = DateTime.Parse("1959-4-15"),
                         Genero = "Western",
-                        Preco = 3.99M
+                        Preco = 3.99M,
+                        Classificacao = "R"
                     }
                 );
                 context.SaveChanges();

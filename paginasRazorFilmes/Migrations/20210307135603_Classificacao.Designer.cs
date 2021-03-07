@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using paginasRazorFilmes.Data;
 
 namespace paginasRazorFilmes.Migrations
 {
     [DbContext(typeof(paginasRazorFilmesContext))]
-    partial class paginasRazorFilmesContextModelSnapshot : ModelSnapshot
+    [Migration("20210307135603_Classificacao")]
+    partial class Classificacao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
