@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace paginasRazorFilmes.Modelos
 {
@@ -11,9 +9,12 @@ namespace paginasRazorFilmes.Modelos
         public int Id { get; set; }
         public string Titulo { get; set; }
 
+        [Display(Name = "Data de Lançamento")]
         [DataType(DataType.Date)]
         public DateTime DataDeLancamento { get; set; }
         public string Genero { get; set; }
+
+        [Column(TypeName = "decimal(18, 2)")]
         public decimal Preco { get; set; }
     }
 }
